@@ -16,5 +16,15 @@ namespace Unidad_2_Paso_2.Forms
         {
             InitializeComponent();
         }
+
+        private void btnExercise2Result_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExercise3Result_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
