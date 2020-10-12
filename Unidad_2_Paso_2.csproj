@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\frmBasicOperations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBasicOperations.Designer.cs">
+      <DependentUpon>frmBasicOperations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmConditions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmConditions.Designer.cs">
+      <DependentUpon>frmConditions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCycles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCycles.Designer.cs">
+      <DependentUpon>frmCycles.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
