@@ -75,6 +75,9 @@
     <EmbeddedResource Include="Forms\frmBasicOperations.resx">
       <DependentUpon>frmBasicOperations.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmConditions.resx">
+      <DependentUpon>frmConditions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>

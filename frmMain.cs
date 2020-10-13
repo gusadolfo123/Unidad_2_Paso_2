@@ -27,7 +27,7 @@ namespace Unidad_2_Paso_2
 
         private void btnConditions_Click(object sender, EventArgs e)
         {
-
+            OpenFormChild(new frmConditions());
         }
 
         private void btnCycles_Click(object sender, EventArgs e)
