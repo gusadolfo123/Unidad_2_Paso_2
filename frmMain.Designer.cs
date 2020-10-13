@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.pnlMenu = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnBasicOperations = new System.Windows.Forms.Button();
-            this.btnConditions = new System.Windows.Forms.Button();
-            this.btnCycles = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnCycles = new System.Windows.Forms.Button();
+            this.btnConditions = new System.Windows.Forms.Button();
+            this.btnBasicOperations = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlPrimary = new System.Windows.Forms.Panel();
             this.pnlMenu.SuspendLayout();
@@ -52,51 +52,27 @@
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(241, 562);
+            this.pnlMenu.Size = new System.Drawing.Size(241, 583);
             this.pnlMenu.TabIndex = 0;
             // 
-            // panel1
+            // btnExit
             // 
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(241, 100);
-            this.panel1.TabIndex = 0;
-            // 
-            // btnBasicOperations
-            // 
-            this.btnBasicOperations.BackColor = System.Drawing.Color.Transparent;
-            this.btnBasicOperations.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBasicOperations.FlatAppearance.BorderSize = 0;
-            this.btnBasicOperations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBasicOperations.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBasicOperations.ForeColor = System.Drawing.Color.Black;
-            this.btnBasicOperations.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBasicOperations.Location = new System.Drawing.Point(0, 100);
-            this.btnBasicOperations.Name = "btnBasicOperations";
-            this.btnBasicOperations.Size = new System.Drawing.Size(241, 56);
-            this.btnBasicOperations.TabIndex = 1;
-            this.btnBasicOperations.Text = "Operaciones básicas de programación";
-            this.btnBasicOperations.UseVisualStyleBackColor = false;
-            this.btnBasicOperations.Click += new System.EventHandler(this.btnBasicOperations_Click);
-            // 
-            // btnConditions
-            // 
-            this.btnConditions.BackColor = System.Drawing.Color.Transparent;
-            this.btnConditions.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnConditions.FlatAppearance.BorderSize = 0;
-            this.btnConditions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConditions.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
-            this.btnConditions.ForeColor = System.Drawing.Color.Black;
-            this.btnConditions.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConditions.Location = new System.Drawing.Point(0, 156);
-            this.btnConditions.Name = "btnConditions";
-            this.btnConditions.Size = new System.Drawing.Size(241, 54);
-            this.btnConditions.TabIndex = 2;
-            this.btnConditions.Text = "Condicionales";
-            this.btnConditions.UseVisualStyleBackColor = false;
-            this.btnConditions.Click += new System.EventHandler(this.btnConditions_Click);
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnExit.ForeColor = System.Drawing.Color.Black;
+            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.Location = new System.Drawing.Point(0, 537);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(241, 46);
+            this.btnExit.TabIndex = 4;
+            this.btnExit.Text = "Salir";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnCycles
             // 
@@ -115,24 +91,48 @@
             this.btnCycles.UseVisualStyleBackColor = false;
             this.btnCycles.Click += new System.EventHandler(this.btnCycles_Click);
             // 
-            // btnExit
+            // btnConditions
             // 
-            this.btnExit.BackColor = System.Drawing.Color.Transparent;
-            this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
-            this.btnExit.ForeColor = System.Drawing.Color.Black;
-            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(0, 516);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(241, 46);
-            this.btnExit.TabIndex = 4;
-            this.btnExit.Text = "Salir";
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.btnConditions.BackColor = System.Drawing.Color.Transparent;
+            this.btnConditions.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnConditions.FlatAppearance.BorderSize = 0;
+            this.btnConditions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConditions.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnConditions.ForeColor = System.Drawing.Color.Black;
+            this.btnConditions.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConditions.Location = new System.Drawing.Point(0, 156);
+            this.btnConditions.Name = "btnConditions";
+            this.btnConditions.Size = new System.Drawing.Size(241, 54);
+            this.btnConditions.TabIndex = 2;
+            this.btnConditions.Text = "Condicionales";
+            this.btnConditions.UseVisualStyleBackColor = false;
+            this.btnConditions.Click += new System.EventHandler(this.btnConditions_Click);
+            // 
+            // btnBasicOperations
+            // 
+            this.btnBasicOperations.BackColor = System.Drawing.Color.Transparent;
+            this.btnBasicOperations.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBasicOperations.FlatAppearance.BorderSize = 0;
+            this.btnBasicOperations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBasicOperations.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBasicOperations.ForeColor = System.Drawing.Color.Black;
+            this.btnBasicOperations.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBasicOperations.Location = new System.Drawing.Point(0, 100);
+            this.btnBasicOperations.Name = "btnBasicOperations";
+            this.btnBasicOperations.Size = new System.Drawing.Size(241, 56);
+            this.btnBasicOperations.TabIndex = 1;
+            this.btnBasicOperations.Text = "Operaciones básicas de programación";
+            this.btnBasicOperations.UseVisualStyleBackColor = false;
+            this.btnBasicOperations.Click += new System.EventHandler(this.btnBasicOperations_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(241, 100);
+            this.panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
@@ -149,7 +149,7 @@
             this.pnlPrimary.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlPrimary.Location = new System.Drawing.Point(241, 0);
             this.pnlPrimary.Name = "pnlPrimary";
-            this.pnlPrimary.Size = new System.Drawing.Size(750, 562);
+            this.pnlPrimary.Size = new System.Drawing.Size(750, 583);
             this.pnlPrimary.TabIndex = 1;
             // 
             // frmMain
@@ -157,10 +157,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(107)))));
-            this.ClientSize = new System.Drawing.Size(991, 562);
+            this.ClientSize = new System.Drawing.Size(991, 583);
             this.Controls.Add(this.pnlPrimary);
             this.Controls.Add(this.pnlMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.MaximumSize = new System.Drawing.Size(1007, 622);
+            this.MinimumSize = new System.Drawing.Size(1007, 622);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";

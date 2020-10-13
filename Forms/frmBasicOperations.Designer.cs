@@ -31,26 +31,31 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.pnlExercise2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtWeight = new System.Windows.Forms.TextBox();
-            this.txtHeight = new System.Windows.Forms.TextBox();
-            this.txtResultExcercise2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.txtHeight = new System.Windows.Forms.NumericUpDown();
+            this.txtWeight = new System.Windows.Forms.NumericUpDown();
             this.btnExercise2Result = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtResultExcercise2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.pnlExercise3 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtConvertNum = new System.Windows.Forms.NumericUpDown();
+            this.cbxTo = new System.Windows.Forms.ComboBox();
+            this.cbxFrom = new System.Windows.Forms.ComboBox();
             this.btnExercise3Result = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.txtResultExcercise3 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.cbxFrom = new System.Windows.Forms.ComboBox();
-            this.cbxTo = new System.Windows.Forms.ComboBox();
             this.pnlExercise2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHeight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtWeight)).BeginInit();
             this.pnlExercise3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtConvertNum)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -79,11 +84,11 @@
             // pnlExercise2
             // 
             this.pnlExercise2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(107)))));
+            this.pnlExercise2.Controls.Add(this.txtHeight);
+            this.pnlExercise2.Controls.Add(this.txtWeight);
             this.pnlExercise2.Controls.Add(this.btnExercise2Result);
             this.pnlExercise2.Controls.Add(this.label4);
             this.pnlExercise2.Controls.Add(this.txtResultExcercise2);
-            this.pnlExercise2.Controls.Add(this.txtHeight);
-            this.pnlExercise2.Controls.Add(this.txtWeight);
             this.pnlExercise2.Controls.Add(this.label3);
             this.pnlExercise2.Controls.Add(this.label2);
             this.pnlExercise2.Controls.Add(this.label1);
@@ -93,71 +98,23 @@
             this.pnlExercise2.Size = new System.Drawing.Size(800, 139);
             this.pnlExercise2.TabIndex = 3;
             // 
-            // label1
+            // txtHeight
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(57, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ingresar Datos";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(57, 62);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Peso (Kg)";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(188, 62);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Altura (m)2";
+            this.txtHeight.DecimalPlaces = 2;
+            this.txtHeight.Location = new System.Drawing.Point(191, 82);
+            this.txtHeight.Name = "txtHeight";
+            this.txtHeight.Size = new System.Drawing.Size(120, 20);
+            this.txtHeight.TabIndex = 9;
+            this.txtHeight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHeight_KeyPress);
             // 
             // txtWeight
             // 
-            this.txtWeight.Location = new System.Drawing.Point(60, 81);
+            this.txtWeight.DecimalPlaces = 2;
+            this.txtWeight.Location = new System.Drawing.Point(60, 82);
             this.txtWeight.Name = "txtWeight";
-            this.txtWeight.Size = new System.Drawing.Size(100, 20);
-            this.txtWeight.TabIndex = 3;
-            // 
-            // txtHeight
-            // 
-            this.txtHeight.Location = new System.Drawing.Point(191, 81);
-            this.txtHeight.Name = "txtHeight";
-            this.txtHeight.Size = new System.Drawing.Size(100, 20);
-            this.txtHeight.TabIndex = 4;
-            // 
-            // txtResultExcercise2
-            // 
-            this.txtResultExcercise2.Enabled = false;
-            this.txtResultExcercise2.Location = new System.Drawing.Point(326, 81);
-            this.txtResultExcercise2.Name = "txtResultExcercise2";
-            this.txtResultExcercise2.Size = new System.Drawing.Size(100, 20);
-            this.txtResultExcercise2.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(323, 62);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 15);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Resultado";
+            this.txtWeight.Size = new System.Drawing.Size(120, 20);
+            this.txtWeight.TabIndex = 8;
+            this.txtWeight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtWeight_KeyPress);
             // 
             // btnExercise2Result
             // 
@@ -172,6 +129,58 @@
             this.btnExercise2Result.UseVisualStyleBackColor = false;
             this.btnExercise2Result.Click += new System.EventHandler(this.btnExercise2Result_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(323, 62);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 15);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Resultado";
+            // 
+            // txtResultExcercise2
+            // 
+            this.txtResultExcercise2.Enabled = false;
+            this.txtResultExcercise2.Location = new System.Drawing.Point(326, 81);
+            this.txtResultExcercise2.Name = "txtResultExcercise2";
+            this.txtResultExcercise2.Size = new System.Drawing.Size(100, 20);
+            this.txtResultExcercise2.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(188, 62);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 15);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Altura (m)";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(57, 62);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 15);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Peso (Kg)";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(57, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Ingresar Datos";
+            // 
             // richTextBox2
             // 
             this.richTextBox2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -185,6 +194,8 @@
             // pnlExercise3
             // 
             this.pnlExercise3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(107)))));
+            this.pnlExercise3.Controls.Add(this.label9);
+            this.pnlExercise3.Controls.Add(this.txtConvertNum);
             this.pnlExercise3.Controls.Add(this.cbxTo);
             this.pnlExercise3.Controls.Add(this.cbxFrom);
             this.pnlExercise3.Controls.Add(this.btnExercise3Result);
@@ -199,12 +210,58 @@
             this.pnlExercise3.Size = new System.Drawing.Size(800, 139);
             this.pnlExercise3.TabIndex = 5;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(57, 62);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(97, 15);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "Valor a convertir";
+            // 
+            // txtConvertNum
+            // 
+            this.txtConvertNum.DecimalPlaces = 2;
+            this.txtConvertNum.Location = new System.Drawing.Point(60, 80);
+            this.txtConvertNum.Name = "txtConvertNum";
+            this.txtConvertNum.Size = new System.Drawing.Size(120, 20);
+            this.txtConvertNum.TabIndex = 10;
+            this.txtConvertNum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtConvertNum_KeyPress);
+            // 
+            // cbxTo
+            // 
+            this.cbxTo.FormattingEnabled = true;
+            this.cbxTo.Items.AddRange(new object[] {
+            "Litro",
+            "Decilitro",
+            "Centilitro"});
+            this.cbxTo.Location = new System.Drawing.Point(321, 81);
+            this.cbxTo.Name = "cbxTo";
+            this.cbxTo.Size = new System.Drawing.Size(121, 21);
+            this.cbxTo.TabIndex = 9;
+            this.cbxTo.Text = "Seleccione...";
+            // 
+            // cbxFrom
+            // 
+            this.cbxFrom.FormattingEnabled = true;
+            this.cbxFrom.Items.AddRange(new object[] {
+            "Metro cubico",
+            "Decímetro cubico",
+            "Centímetro cubico"});
+            this.cbxFrom.Location = new System.Drawing.Point(190, 81);
+            this.cbxFrom.Name = "cbxFrom";
+            this.cbxFrom.Size = new System.Drawing.Size(121, 21);
+            this.cbxFrom.TabIndex = 8;
+            this.cbxFrom.Text = "Seleccione...";
+            // 
             // btnExercise3Result
             // 
             this.btnExercise3Result.BackColor = System.Drawing.Color.White;
             this.btnExercise3Result.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExercise3Result.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
-            this.btnExercise3Result.Location = new System.Drawing.Point(456, 79);
+            this.btnExercise3Result.Location = new System.Drawing.Point(586, 79);
             this.btnExercise3Result.Name = "btnExercise3Result";
             this.btnExercise3Result.Size = new System.Drawing.Size(75, 23);
             this.btnExercise3Result.TabIndex = 7;
@@ -217,7 +274,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(323, 62);
+            this.label5.Location = new System.Drawing.Point(453, 62);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(60, 15);
             this.label5.TabIndex = 6;
@@ -226,7 +283,7 @@
             // txtResultExcercise3
             // 
             this.txtResultExcercise3.Enabled = false;
-            this.txtResultExcercise3.Location = new System.Drawing.Point(326, 81);
+            this.txtResultExcercise3.Location = new System.Drawing.Point(456, 81);
             this.txtResultExcercise3.Name = "txtResultExcercise3";
             this.txtResultExcercise3.Size = new System.Drawing.Size(100, 20);
             this.txtResultExcercise3.TabIndex = 5;
@@ -236,7 +293,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(188, 62);
+            this.label6.Location = new System.Drawing.Point(318, 62);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(66, 15);
             this.label6.TabIndex = 2;
@@ -247,7 +304,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(57, 62);
+            this.label7.Location = new System.Drawing.Point(187, 62);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(73, 15);
             this.label7.TabIndex = 1;
@@ -264,28 +321,13 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Ingresar Datos";
             // 
-            // cbxFrom
-            // 
-            this.cbxFrom.FormattingEnabled = true;
-            this.cbxFrom.Location = new System.Drawing.Point(60, 81);
-            this.cbxFrom.Name = "cbxFrom";
-            this.cbxFrom.Size = new System.Drawing.Size(121, 21);
-            this.cbxFrom.TabIndex = 8;
-            // 
-            // cbxTo
-            // 
-            this.cbxTo.FormattingEnabled = true;
-            this.cbxTo.Location = new System.Drawing.Point(191, 81);
-            this.cbxTo.Name = "cbxTo";
-            this.cbxTo.Size = new System.Drawing.Size(121, 21);
-            this.cbxTo.TabIndex = 9;
-            // 
             // frmBasicOperations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 615);
+            this.ClientSize = new System.Drawing.Size(800, 588);
             this.Controls.Add(this.pnlExercise3);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.pnlExercise2);
@@ -295,8 +337,11 @@
             this.Text = "frmBasicOperations";
             this.pnlExercise2.ResumeLayout(false);
             this.pnlExercise2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHeight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtWeight)).EndInit();
             this.pnlExercise3.ResumeLayout(false);
             this.pnlExercise3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtConvertNum)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -307,8 +352,6 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Panel pnlExercise2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtHeight;
-        private System.Windows.Forms.TextBox txtWeight;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
@@ -324,5 +367,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cbxTo;
         private System.Windows.Forms.ComboBox cbxFrom;
+        private System.Windows.Forms.NumericUpDown txtHeight;
+        private System.Windows.Forms.NumericUpDown txtWeight;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.NumericUpDown txtConvertNum;
     }
 }
