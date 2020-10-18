@@ -36,6 +36,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnInitTest = new System.Windows.Forms.Button();
             this.pnlTest = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Question3_op3 = new System.Windows.Forms.RadioButton();
             this.Question3_op2 = new System.Windows.Forms.RadioButton();
@@ -56,11 +58,21 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.Question4_op1 = new System.Windows.Forms.RadioButton();
+            this.Question4_op2 = new System.Windows.Forms.RadioButton();
+            this.Question4_op3 = new System.Windows.Forms.RadioButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.Question5_op1 = new System.Windows.Forms.RadioButton();
+            this.Question5_op2 = new System.Windows.Forms.RadioButton();
             this.pnlExercise2.SuspendLayout();
             this.pnlTest.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnlQuestion1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlExercise2
@@ -75,7 +87,7 @@
             this.pnlExercise2.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlExercise2.Location = new System.Drawing.Point(0, 219);
             this.pnlExercise2.Name = "pnlExercise2";
-            this.pnlExercise2.Size = new System.Drawing.Size(761, 623);
+            this.pnlExercise2.Size = new System.Drawing.Size(761, 872);
             this.pnlExercise2.TabIndex = 8;
             // 
             // btnFinishTest
@@ -125,6 +137,10 @@
             // 
             // pnlTest
             // 
+            this.pnlTest.Controls.Add(this.panel4);
+            this.pnlTest.Controls.Add(this.label7);
+            this.pnlTest.Controls.Add(this.panel3);
+            this.pnlTest.Controls.Add(this.label6);
             this.pnlTest.Controls.Add(this.panel2);
             this.pnlTest.Controls.Add(this.label5);
             this.pnlTest.Controls.Add(this.panel1);
@@ -133,9 +149,31 @@
             this.pnlTest.Controls.Add(this.label3);
             this.pnlTest.Location = new System.Drawing.Point(56, 109);
             this.pnlTest.Name = "pnlTest";
-            this.pnlTest.Size = new System.Drawing.Size(645, 479);
+            this.pnlTest.Size = new System.Drawing.Size(645, 730);
             this.pnlTest.TabIndex = 1;
             this.pnlTest.Visible = false;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.Question4_op3);
+            this.panel3.Controls.Add(this.Question4_op2);
+            this.panel3.Controls.Add(this.Question4_op1);
+            this.panel3.Controls.Add(this.richTextBox3);
+            this.panel3.Location = new System.Drawing.Point(24, 362);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(489, 190);
+            this.panel3.TabIndex = 8;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(21, 333);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(386, 15);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "4. El resultado del siguiente codigo que figura muestra como resultado:";
             // 
             // panel2
             // 
@@ -360,12 +398,106 @@
             this.lblTitle.Text = "Tema 2 Condicionales";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // richTextBox3
+            // 
+            this.richTextBox3.Enabled = false;
+            this.richTextBox3.Location = new System.Drawing.Point(14, 10);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.Size = new System.Drawing.Size(240, 163);
+            this.richTextBox3.TabIndex = 0;
+            this.richTextBox3.Text = resources.GetString("richTextBox3.Text");
+            // 
+            // Question4_op1
+            // 
+            this.Question4_op1.AutoSize = true;
+            this.Question4_op1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Question4_op1.ForeColor = System.Drawing.Color.White;
+            this.Question4_op1.Location = new System.Drawing.Point(286, 24);
+            this.Question4_op1.Name = "Question4_op1";
+            this.Question4_op1.Size = new System.Drawing.Size(65, 19);
+            this.Question4_op1.TabIndex = 7;
+            this.Question4_op1.TabStop = true;
+            this.Question4_op1.Text = "Cuadro";
+            this.Question4_op1.UseVisualStyleBackColor = true;
+            // 
+            // Question4_op2
+            // 
+            this.Question4_op2.AutoSize = true;
+            this.Question4_op2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Question4_op2.ForeColor = System.Drawing.Color.White;
+            this.Question4_op2.Location = new System.Drawing.Point(286, 62);
+            this.Question4_op2.Name = "Question4_op2";
+            this.Question4_op2.Size = new System.Drawing.Size(75, 19);
+            this.Question4_op2.TabIndex = 8;
+            this.Question4_op2.TabStop = true;
+            this.Question4_op2.Text = "Triangulo";
+            this.Question4_op2.UseVisualStyleBackColor = true;
+            // 
+            // Question4_op3
+            // 
+            this.Question4_op3.AutoSize = true;
+            this.Question4_op3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Question4_op3.ForeColor = System.Drawing.Color.White;
+            this.Question4_op3.Location = new System.Drawing.Point(286, 102);
+            this.Question4_op3.Name = "Question4_op3";
+            this.Question4_op3.Size = new System.Drawing.Size(54, 19);
+            this.Question4_op3.TabIndex = 9;
+            this.Question4_op3.TabStop = true;
+            this.Question4_op3.Text = "Linea";
+            this.Question4_op3.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(21, 575);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(398, 15);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "5. la condicion Do While ejecuta su condigo  y luego valida la condicion";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.Question5_op2);
+            this.panel4.Controls.Add(this.Question5_op1);
+            this.panel4.Location = new System.Drawing.Point(24, 609);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(200, 100);
+            this.panel4.TabIndex = 10;
+            // 
+            // Question5_op1
+            // 
+            this.Question5_op1.AutoSize = true;
+            this.Question5_op1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Question5_op1.ForeColor = System.Drawing.Color.White;
+            this.Question5_op1.Location = new System.Drawing.Point(17, 17);
+            this.Question5_op1.Name = "Question5_op1";
+            this.Question5_op1.Size = new System.Drawing.Size(83, 19);
+            this.Question5_op1.TabIndex = 10;
+            this.Question5_op1.TabStop = true;
+            this.Question5_op1.Text = "Verdadero";
+            this.Question5_op1.UseVisualStyleBackColor = true;
+            // 
+            // Question5_op2
+            // 
+            this.Question5_op2.AutoSize = true;
+            this.Question5_op2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Question5_op2.ForeColor = System.Drawing.Color.White;
+            this.Question5_op2.Location = new System.Drawing.Point(17, 55);
+            this.Question5_op2.Name = "Question5_op2";
+            this.Question5_op2.Size = new System.Drawing.Size(53, 19);
+            this.Question5_op2.TabIndex = 11;
+            this.Question5_op2.TabStop = true;
+            this.Question5_op2.Text = "Falso";
+            this.Question5_op2.UseVisualStyleBackColor = true;
+            // 
             // frmConditions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(778, 588);
+            this.ClientSize = new System.Drawing.Size(778, 824);
             this.Controls.Add(this.pnlExercise2);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.lblTitle);
@@ -375,12 +507,16 @@
             this.pnlExercise2.PerformLayout();
             this.pnlTest.ResumeLayout(false);
             this.pnlTest.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.pnlQuestion1.ResumeLayout(false);
             this.pnlQuestion1.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -412,5 +548,15 @@
         private System.Windows.Forms.RadioButton Question3_op3;
         private System.Windows.Forms.RadioButton Question3_op2;
         private System.Windows.Forms.RadioButton Question3_op1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.RadioButton Question4_op3;
+        private System.Windows.Forms.RadioButton Question4_op2;
+        private System.Windows.Forms.RadioButton Question4_op1;
+        private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.RadioButton Question5_op2;
+        private System.Windows.Forms.RadioButton Question5_op1;
     }
 }
