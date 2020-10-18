@@ -32,7 +32,7 @@ namespace Unidad_2_Paso_2
 
         private void btnCycles_Click(object sender, EventArgs e)
         {
-
+            OpenFormChild(new frmCycles());
         }
 
         private void btnExit_Click(object sender, EventArgs e)
