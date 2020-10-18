@@ -7,20 +7,83 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Unidad_2_Paso_2.Data;
+using Unidad_2_Paso_2.Models;
 
 namespace Unidad_2_Paso_2.Forms
 {
     public partial class frmConditions : Form
     {
         private int _maxMinTest = 120;
+        private List<Product> _products;
 
         public frmConditions()
         {
             InitializeComponent();
+            LoadProducts();
+        }
+
+        private void LoadProducts()
+        {
+            _products = SeedData.SeedProducts();
+            dgvProducts.DataSource = _products;
+            dgvProducts.Refresh();
+
+            // se agrega el campo boton y su respectivo evento
+            // https://stackoverflow.com/questions/21191950/how-to-add-a-button-to-a-column-in-the-datagridview
+                      
+            DataGridViewButtonColumn button = new DataGridViewButtonColumn();
+            {
+                button.Name = "AddToOrder";
+                button.HeaderText = "Agregar a Venta";
+                button.Text = "Agregar";
+                button.UseColumnTextForButtonValue = true;
+                this.dgvProducts.Columns.Add(button);
+            }
+
+            dgvProducts.CellContentClick += dgvProducts_CellContentClick;
+
+        }
+         
+        private void dgvProducts_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Check deleted rows
+            if (dgvProducts.Columns[e.ColumnIndex].Name == "AddToOrder")
+            {
+                var value = dgvProducts.Rows[e.RowIndex].Cells[0].Value;
+
+                Product prod = _products.Find(x => x.Id == int.Parse(value.ToString()));
+
+                if(prod.Stock > 0)
+                {
+                    prod.Stock -= 1;
+
+                    dgvProducts.DataSource = _products;
+                    dgvProducts.Refresh();
+
+                    decimal currentPrice = decimal.Parse(lblPrice.Text);
+                    currentPrice += prod.UnitPrice;
+                    lblPrice.Text = currentPrice.ToString();
+
+                    decimal currentTax = decimal.Parse(lblTax.Text);
+                    currentTax += prod.Tax;
+                    lblTax.Text = currentTax.ToString();
+
+                    lblFullPrice.Text = (currentPrice + currentTax).ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Producto sin Stock");
+                }
+                
+            }
         }
 
         private void btnInitTest_Click(object sender, EventArgs e)
-        {                        
+        {
+            pnlExercise2.Enabled = true;
+            pnlExercise2.Visible = true;
+
             timer1.Interval = 1000;
             timer1.Tick += Timer1_Tick;
 
@@ -159,5 +222,7 @@ namespace Unidad_2_Paso_2.Forms
 
             SetTime();
         }
+
+      
     }
 }
